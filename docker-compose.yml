@@ -3,6 +3,8 @@ services:
     database:
         image: postgres:13.5
         restart: always
+        env_file:
+            - .env
         environment:
             - POSTGRES_USER=app
             - POSTGRES_PASSWORD=d!@O9p7.4Fg2a
